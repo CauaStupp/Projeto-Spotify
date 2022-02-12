@@ -1,0 +1,305 @@
+/* CONFIGURANDO O BODY */
+
+body, html, .section-principal {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: url('../img/capa.png') fixed, url('../img/ruido.png') fixed, linear-gradient(50deg, #ff4169, #7c26f8) fixed;
+    font-family: Helvetica, sans-serif ,sans-serif;
+}
+
+
+
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+
+
+
+/* CONFIGURANDO O HEADER */
+
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 0px;
+}
+
+#img {
+    width: 150px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #9bf0e1;
+    transition: color 0.2s;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+}
+
+.navbar-dark .navbar-toggler:hover {
+    color: rgb(0, 0, 0);
+    border-color: rgba(255, 255, 255, 0.219);
+}
+
+.divisor {
+    width: 1px;
+    height: 22px;
+    background-color: white;
+}
+
+.textos {
+    text-align: center;
+}
+
+
+
+
+
+/* CONGIGURANDO A TIPOGRAFIA */
+
+h1 {
+    letter-spacing: -0.05em;
+    font-weight: 90%;
+    margin-bottom: 30px;
+    color: white;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.aumenta {
+    font-size: 2em;
+}
+
+
+
+/* CONFIGURANDO OS BOTÕES */
+
+.btn-custom {
+    color: white;
+    border-radius: 500px;
+    text-transform: uppercase;
+    transition: 0.4s;
+    padding: 10px 20px;
+}
+
+.btn-1 {
+    background-color: #6a00ff;
+    border: 2px solid transparent;
+}
+
+.btn-1:hover {
+    color: white;
+    background-color: #421581;
+}
+
+.btn-2 {
+    border: 2px solid white;
+}
+
+.btn-2:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+/* CONFIGURANDO A SEÇÃO DE SERVIÇOS */
+
+.caixa {
+    padding: 20px 0px; 
+}
+
+.section-servicos {
+    background-color: whitesmoke;
+    padding: 20px 0px;
+}
+
+.section-servicos h2, h3 {
+    color: #7c26f8;
+}
+
+
+
+
+/* CONFIGURANDO A SEÇÃO RECURSOS */
+
+.section-recursos h2 {
+    color: white;
+}
+
+.section-recursos h3 {
+    color: #9bf0e1;
+}
+
+.section-recursos p {
+    color: white;
+}
+
+.albuns {
+    padding: 10px 0;
+}
+
+.rotacionar {
+    transform: rotate(30deg);
+    padding-left: 90px;
+}
+
+
+/* CONGIGURANDO O RODAPE */
+
+footer {
+    background: black;
+    padding: 50px 0px 30px;
+    position: relative;
+}
+
+footer h4 {
+    color: #919496;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+footer .navbar-nav a {
+    color: white;
+    font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover {
+    color: #9bf0e1;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    float: right;
+    margin: 0px 10px;
+}
+
+footer ul li img {
+    width: 42px;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .btn-custom {
+        padding: 5px 15px;
+        font-size: 1rem;
+    }
+
+    .section-servicos h2 {
+        font-size: 2em;
+    }
+
+    .section-servicos h3 {
+        font-size: 1em;
+    }
+
+    .section-servicos p {
+        font-size: 0.9em;
+    }
+
+    .config {
+        margin-top: 40px;
+    }
+
+    .section-recursos h2 {
+        font-size: 2em;
+    }
+
+    .section-recursos h3 {
+        font-size: 1em;
+    }
+
+    .costumi {
+        margin-top: 20px;
+    }
+
+    .section-recursos p {
+        font-size: 0.9em;
+    }
+}
+
+
+/* RESPONSIVIDADE DO BOOTSTRAP */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .btn-custom {
+        padding: 5px 15px;
+        font-size: 1rem;
+    }
+
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    .btn-custom {
+        padding: 5px 15px;
+        font-size: 1rem;
+    }
+
+    .img-div {
+        margin-top: 20px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    h1 {
+        font-size: 5em;
+    }
+
+    .btn-custom {
+        margin: 10px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 6.0em;
+    }
+
+    .btn-custom {
+        margin: 10px;
+    }
+}
